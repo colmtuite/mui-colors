@@ -1,16 +1,43 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "graphik trial";
   font-size: 14px;
-  min-height: 2000px;
   color: hsl(0 0% 20%);
+  height: 100%;
+}
+
+.Header {
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: 1px solid gainsboro;
 }
 
 .Grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
-  margin-bottom: 64px;
+  grid-template-columns: repeat(15, 48px);
+}
+
+.app-button {
+  all: unset;
+  height: 32px;
+  width: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.app-button:hover {
+  background-color: var(--gray-c2);
 }
 
 .Swatch {
@@ -31,7 +58,7 @@ body {
 
 .Container {
   box-sizing: border-box;
-  max-width: 75vw;
+  max-width: 50vw;
   margin-left: auto;
   margin-right: auto;
 }

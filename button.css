@@ -15,13 +15,21 @@
 
 .Button.variant-filled { color: white; }
 .Button.variant-filled.color-gray { background-color: var(--gray-p1); }
+.Button.variant-filled.color-mauve { background-color: var(--mauve-p1); }
+.Button.variant-filled.color-slate { background-color: var(--slate-p1); }
+.Button.variant-filled.color-sage { background-color: var(--sage-p1); }
+.Button.variant-filled.color-olive { background-color: var(--olive-p1); }
+.Button.variant-filled.color-sand { background-color: var(--sand-p1); }
+.Button.variant-filled.color-amber { background-color: var(--amber-p1); color: black; }
 .Button.variant-filled.color-orange { background-color: var(--orange-p1); }
 .Button.variant-filled.color-red { background-color: var(--red-p1); }
 .Button.variant-filled.color-pink { background-color: var(--pink-p1); }
+.Button.variant-filled.color-plum { background-color: var(--plum-p1); }
 .Button.variant-filled.color-purple { background-color: var(--purple-p1); }
 .Button.variant-filled.color-violet { background-color: var(--violet-p1); }
 .Button.variant-filled.color-indigo { background-color: var(--indigo-p1); }
 .Button.variant-filled.color-blue { background-color: var(--blue-p1); }
+.Button.variant-filled.color-teal { background-color: var(--teal-p1); }
 .Button.variant-filled.color-green { background-color: var(--green-p1); }
 
 .Button.variant-soft.color-gray { background-color: var(--gray-c1); color: var(--gray-t1); }

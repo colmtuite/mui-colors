@@ -8,260 +8,465 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button onclick="toggleGap()">Gap</button>
-  <button onclick="toggleBlur()">Blur</button>
-  <button onclick="toggleGrayScale()">Grey scale</button>
-  <button onclick="toggleLightMode()">Dark mode</button>
-  <div class="Container">
-    <div class="Grid f-g" id="color-grid">
-      <div class="Name"></div>
-      <div class="Swatch">s1</div>
-      <div class="Swatch">s2</div>
-      <div class="Swatch">c1</div>
-      <div class="Swatch">c2</div>
-      <div class="Swatch">c3</div>
-      <div class="Swatch">o1</div>
-      <div class="Swatch">o2</div>
-      <div class="Swatch">o3</div>
-      <div class="Swatch">p1</div>
-      <div class="Swatch">p2</div>
-      <div class="Swatch">p3</div>
-      <div class="Swatch">t1</div>
-      <div class="Swatch">t2</div>
-
-      <div class="Name">Gray</div>
-      <div class="Swatch" style="background-color: var(--gray-s1);"></div>
-      <div class="Swatch" style="background-color: var(--gray-s2);"></div>
-      <div class="Swatch" style="background-color: var(--gray-c1);"></div>
-      <div class="Swatch" style="background-color: var(--gray-c2);"></div>
-      <div class="Swatch" style="background-color: var(--gray-c3);"></div>
-      <div class="Swatch" style="background-color: var(--gray-o1);"></div>
-      <div class="Swatch" style="background-color: var(--gray-o2);"></div>
-      <div class="Swatch" style="background-color: var(--gray-o3);"></div>
-      <div class="Swatch" style="background-color: var(--gray-p1);"></div>
-      <div class="Swatch" style="background-color: var(--gray-p2);"></div>
-      <div class="Swatch" style="background-color: var(--gray-p3);"></div>
-      <div class="Swatch" style="background-color: var(--gray-t1);"></div>
-      <div class="Swatch" style="background-color: var(--gray-t2);"></div>
-
-      <div class="Name">Orange</div>
-      <div class="Swatch" style="background-color: var(--orange-s1);"></div>
-      <div class="Swatch" style="background-color: var(--orange-s2);"></div>
-      <div class="Swatch" style="background-color: var(--orange-c1);"></div>
-      <div class="Swatch" style="background-color: var(--orange-c2);"></div>
-      <div class="Swatch" style="background-color: var(--orange-c3);"></div>
-      <div class="Swatch" style="background-color: var(--orange-o1);"></div>
-      <div class="Swatch" style="background-color: var(--orange-o2);"></div>
-      <div class="Swatch" style="background-color: var(--orange-o3);"></div>
-      <div class="Swatch" style="background-color: var(--orange-p1);"></div>
-      <div class="Swatch" style="background-color: var(--orange-p2);"></div>
-      <div class="Swatch" style="background-color: var(--orange-p3);"></div>
-      <div class="Swatch" style="background-color: var(--orange-t1);"></div>
-      <div class="Swatch" style="background-color: var(--orange-t2);"></div>
-
-      <div class="Name">Red</div>
-      <div class="Swatch" style="background-color: var(--red-s1);"></div>
-      <div class="Swatch" style="background-color: var(--red-s2);"></div>
-      <div class="Swatch" style="background-color: var(--red-c1);"></div>
-      <div class="Swatch" style="background-color: var(--red-c2);"></div>
-      <div class="Swatch" style="background-color: var(--red-c3);"></div>
-      <div class="Swatch" style="background-color: var(--red-o1);"></div>
-      <div class="Swatch" style="background-color: var(--red-o2);"></div>
-      <div class="Swatch" style="background-color: var(--red-o3);"></div>
-      <div class="Swatch" style="background-color: var(--red-p1);"></div>
-      <div class="Swatch" style="background-color: var(--red-p2);"></div>
-      <div class="Swatch" style="background-color: var(--red-p3);"></div>
-      <div class="Swatch" style="background-color: var(--red-t1);"></div>
-      <div class="Swatch" style="background-color: var(--red-t2);"></div>
-
-      <div class="Name">Pink</div>
-      <div class="Swatch" style="background-color: var(--pink-s1);"></div>
-      <div class="Swatch" style="background-color: var(--pink-s2);"></div>
-      <div class="Swatch" style="background-color: var(--pink-c1);"></div>
-      <div class="Swatch" style="background-color: var(--pink-c2);"></div>
-      <div class="Swatch" style="background-color: var(--pink-c3);"></div>
-      <div class="Swatch" style="background-color: var(--pink-o1);"></div>
-      <div class="Swatch" style="background-color: var(--pink-o2);"></div>
-      <div class="Swatch" style="background-color: var(--pink-o3);"></div>
-      <div class="Swatch" style="background-color: var(--pink-p1);"></div>
-      <div class="Swatch" style="background-color: var(--pink-p2);"></div>
-      <div class="Swatch" style="background-color: var(--pink-p3);"></div>
-      <div class="Swatch" style="background-color: var(--pink-t1);"></div>
-      <div class="Swatch" style="background-color: var(--pink-t2);"></div>
-
-      <div class="Name">Purple</div>
-      <div class="Swatch" style="background-color: var(--purple-s1);"></div>
-      <div class="Swatch" style="background-color: var(--purple-s2);"></div>
-      <div class="Swatch" style="background-color: var(--purple-c1);"></div>
-      <div class="Swatch" style="background-color: var(--purple-c2);"></div>
-      <div class="Swatch" style="background-color: var(--purple-c3);"></div>
-      <div class="Swatch" style="background-color: var(--purple-o1);"></div>
-      <div class="Swatch" style="background-color: var(--purple-o2);"></div>
-      <div class="Swatch" style="background-color: var(--purple-o3);"></div>
-      <div class="Swatch" style="background-color: var(--purple-p1);"></div>
-      <div class="Swatch" style="background-color: var(--purple-p2);"></div>
-      <div class="Swatch" style="background-color: var(--purple-p3);"></div>
-      <div class="Swatch" style="background-color: var(--purple-t1);"></div>
-      <div class="Swatch" style="background-color: var(--purple-t2);"></div>
-
-      <div class="Name">Violet</div>
-      <div class="Swatch" style="background-color: var(--violet-s1);"></div>
-      <div class="Swatch" style="background-color: var(--violet-s2);"></div>
-      <div class="Swatch" style="background-color: var(--violet-c1);"></div>
-      <div class="Swatch" style="background-color: var(--violet-c2);"></div>
-      <div class="Swatch" style="background-color: var(--violet-c3);"></div>
-      <div class="Swatch" style="background-color: var(--violet-o1);"></div>
-      <div class="Swatch" style="background-color: var(--violet-o2);"></div>
-      <div class="Swatch" style="background-color: var(--violet-o3);"></div>
-      <div class="Swatch" style="background-color: var(--violet-p1);"></div>
-      <div class="Swatch" style="background-color: var(--violet-p2);"></div>
-      <div class="Swatch" style="background-color: var(--violet-p3);"></div>
-      <div class="Swatch" style="background-color: var(--violet-t1);"></div>
-      <div class="Swatch" style="background-color: var(--violet-t2);"></div>
-
-      <div class="Name">Indigo</div>
-      <div class="Swatch" style="background-color: var(--indigo-s1);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-s2);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-c1);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-c2);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-c3);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-o1);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-o2);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-o3);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-p1);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-p2);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-p3);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-t1);"></div>
-      <div class="Swatch" style="background-color: var(--indigo-t2);"></div>
-
-      <div class="Name">Blue</div>
-      <div class="Swatch" style="background-color: var(--blue-s1);"></div>
-      <div class="Swatch" style="background-color: var(--blue-s2);"></div>
-      <div class="Swatch" style="background-color: var(--blue-c1);"></div>
-      <div class="Swatch" style="background-color: var(--blue-c2);"></div>
-      <div class="Swatch" style="background-color: var(--blue-c3);"></div>
-      <div class="Swatch" style="background-color: var(--blue-o1);"></div>
-      <div class="Swatch" style="background-color: var(--blue-o2);"></div>
-      <div class="Swatch" style="background-color: var(--blue-o3);"></div>
-      <div class="Swatch" style="background-color: var(--blue-p1);"></div>
-      <div class="Swatch" style="background-color: var(--blue-p2);"></div>
-      <div class="Swatch" style="background-color: var(--blue-p3);"></div>
-      <div class="Swatch" style="background-color: var(--blue-t1);"></div>
-      <div class="Swatch" style="background-color: var(--blue-t2);"></div>
-
-      <div class="Name">Green</div>
-      <div class="Swatch" style="background-color: var(--green-s1);"></div>
-      <div class="Swatch" style="background-color: var(--green-s2);"></div>
-      <div class="Swatch" style="background-color: var(--green-c1);"></div>
-      <div class="Swatch" style="background-color: var(--green-c2);"></div>
-      <div class="Swatch" style="background-color: var(--green-c3);"></div>
-      <div class="Swatch" style="background-color: var(--green-o1);"></div>
-      <div class="Swatch" style="background-color: var(--green-o2);"></div>
-      <div class="Swatch" style="background-color: var(--green-o3);"></div>
-      <div class="Swatch" style="background-color: var(--green-p1);"></div>
-      <div class="Swatch" style="background-color: var(--green-p2);"></div>
-      <div class="Swatch" style="background-color: var(--green-p3);"></div>
-      <div class="Swatch" style="background-color: var(--green-t1);"></div>
-      <div class="Swatch" style="background-color: var(--green-t2);"></div>
+  <header class="Header">
+    <div class="d-f">
+      <button class="app-button" onclick="toggleGap()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect x="1.5" y="1.5" width="13" height="13" rx="1.5" stroke="black"/>
+          <rect x="4.5" y="4.5" width="7" height="7" rx="0.5" stroke="black"/>
+        </svg>
+      </button>
+      <button class="app-button" onclick="toggleBlur()">
+        <svg width="16" height="16" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity=".05" d="M6.78296 13.376C8.73904 9.95284 8.73904 5.04719 6.78296 1.62405L7.21708 1.37598C9.261 4.95283 9.261 10.0472 7.21708 13.624L6.78296 13.376Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".1" d="M7.28204 13.4775C9.23929 9.99523 9.23929 5.00475 7.28204 1.52248L7.71791 1.2775C9.76067 4.9119 9.76067 10.0881 7.71791 13.7225L7.28204 13.4775Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".15" d="M7.82098 13.5064C9.72502 9.99523 9.72636 5.01411 7.82492 1.50084L8.26465 1.26285C10.2465 4.92466 10.2451 10.085 8.26052 13.7448L7.82098 13.5064Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".2" d="M8.41284 13.429C10.1952 9.92842 10.1957 5.07537 8.41435 1.57402L8.85999 1.34729C10.7139 4.99113 10.7133 10.0128 8.85841 13.6559L8.41284 13.429Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".25" d="M9.02441 13.2956C10.6567 9.8379 10.6586 5.17715 9.03005 1.71656L9.48245 1.50366C11.1745 5.09919 11.1726 9.91629 9.47657 13.5091L9.02441 13.2956Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".3" d="M9.66809 13.0655C11.1097 9.69572 11.1107 5.3121 9.67088 1.94095L10.1307 1.74457C11.6241 5.24121 11.6231 9.76683 10.1278 13.2622L9.66809 13.0655Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".35" d="M10.331 12.7456C11.5551 9.52073 11.5564 5.49103 10.3347 2.26444L10.8024 2.0874C12.0672 5.42815 12.0659 9.58394 10.7985 12.9231L10.331 12.7456Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".4" d="M11.0155 12.2986C11.9938 9.29744 11.9948 5.71296 11.0184 2.71067L11.4939 2.55603C12.503 5.6589 12.502 9.35178 11.4909 12.4535L11.0155 12.2986Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".45" d="M11.7214 11.668C12.4254 9.01303 12.4262 5.99691 11.7237 3.34116L12.2071 3.21329C12.9318 5.95292 12.931 9.05728 12.2047 11.7961L11.7214 11.668Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path opacity=".5" d="M12.4432 10.752C12.8524 8.63762 12.8523 6.36089 12.4429 4.2466L12.9338 4.15155C13.3553 6.32861 13.3554 8.66985 12.9341 10.847L12.4432 10.752Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <path d="M0.877075 7.49988C0.877075 3.84219 3.84222 0.877045 7.49991 0.877045C11.1576 0.877045 14.1227 3.84219 14.1227 7.49988C14.1227 11.1575 11.1576 14.1227 7.49991 14.1227C3.84222 14.1227 0.877075 11.1575 0.877075 7.49988ZM7.49991 1.82704C4.36689 1.82704 1.82708 4.36686 1.82708 7.49988C1.82708 10.6329 4.36689 13.1727 7.49991 13.1727C10.6329 13.1727 13.1727 10.6329 13.1727 7.49988C13.1727 4.36686 10.6329 1.82704 7.49991 1.82704Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <button class="app-button" onclick="toggleGrayScale()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="6.5" stroke="black"/>
+          <path d="M7.5 2H8.5V14H7.5L7.5 2Z" fill="black"/>
+          <path d="M12.3033 2.98959L13.0104 3.6967L3.81803 12.8891L3.11093 12.182L12.3033 2.98959Z" fill="black"/>
+          <path d="M2.98959 3.69669L3.6967 2.98958L12.8891 12.182L12.182 12.8891L2.98959 3.69669Z" fill="black"/>
+          <path d="M2 8.5L2 7.5L14 7.5L14 8.5L2 8.5Z" fill="black"/>
+        </svg>
+      </button>
+      <button class="app-button" onclick="toggleLightMode()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10.5 8C10.5 9.38071 9.38071 10.5 8 10.5C6.61929 10.5 5.5 9.38071 5.5 8C5.5 6.61929 6.61929 5.5 8 5.5C9.38071 5.5 10.5 6.61929 10.5 8Z" stroke="#161616"/>
+          <path d="M8 1.5V3.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M8 12.5V14.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M1.5 8H3.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M12.5 8H14.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M3.5 3.5L4.5 4.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M12.5 3.5L11.5 4.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M3.5 12.5L4.5 11.5" stroke="#161616" stroke-linecap="round"/>
+          <path d="M12.5 12.5L11.5 11.5" stroke="#161616" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
-
-    <div class="d-f fd-c g-8">
-      <div class="d-f wr-w g-2">
-        <div class="Button variant-filled color-gray">Gray</div>
-        <div class="Button variant-filled color-orange">Orange</div>
-        <div class="Button variant-filled color-red">Red</div>
-        <div class="Button variant-filled color-pink">Pink</div>
-        <div class="Button variant-filled color-purple">Purple</div>
-        <div class="Button variant-filled color-violet">Violet</div>
-        <div class="Button variant-filled color-indigo">Indigo</div>
-        <div class="Button variant-filled color-blue">Blue</div>
-        <div class="Button variant-filled color-green">Green</div>
-      </div>
+  </header>
+  <div class="d-f" style="height: 100%">
+    <div style="border-right: 1px solid gainsboro; overflow-y: scroll; flex-shrink: 0; box-sizing: border-box; padding: 0 16px 16px 16px; height: calc(100% - 49px)">
+      <div class="Grid f-g" id="color-grid">
+        <div class="Name"></div>
+        <div class="Swatch">S1</div>
+        <div class="Swatch">S2</div>
+        <div class="Swatch">C1</div>
+        <div class="Swatch">C2</div>
+        <div class="Swatch">C3</div>
+        <div class="Swatch">O1</div>
+        <div class="Swatch">O2</div>
+        <div class="Swatch">O3</div>
+        <div class="Swatch">P1</div>
+        <div class="Swatch">P2</div>
+        <div class="Swatch">P3</div>
+        <div class="Swatch">T1</div>
+        <div class="Swatch">T2</div>
   
-      <div class="d-f wr-w g-2">
-        <div class="Button variant-soft color-gray">Gray</div>
-        <div class="Button variant-soft color-orange">Orange</div>
-        <div class="Button variant-soft color-red">Red</div>
-        <div class="Button variant-soft color-pink">Pink</div>
-        <div class="Button variant-soft color-purple">Purple</div>
-        <div class="Button variant-soft color-violet">Violet</div>
-        <div class="Button variant-soft color-indigo">Indigo</div>
-        <div class="Button variant-soft color-blue">Blue</div>
-        <div class="Button variant-soft color-green">Green</div>
-      </div>
-
-      <div class="d-f wr-w g-2">
-        <div class="Button variant-text color-gray">Gray</div>
-        <div class="Button variant-text color-orange">Orange</div>
-        <div class="Button variant-text color-red">Red</div>
-        <div class="Button variant-text color-pink">Pink</div>
-        <div class="Button variant-text color-purple">Purple</div>
-        <div class="Button variant-text color-violet">Violet</div>
-        <div class="Button variant-text color-indigo">Indigo</div>
-        <div class="Button variant-text color-blue">Blue</div>
-        <div class="Button variant-text color-green">Green</div>
-      </div>
-
-      <div class="d-f wr-w g-2">
-        <div class="Button variant-classic color-gray">Gray</div>
-        <div class="Button variant-classic color-orange">Orange</div>
-        <div class="Button variant-classic color-red">Red</div>
-        <div class="Button variant-classic color-pink">Pink</div>
-        <div class="Button variant-classic color-purple">Purple</div>
-        <div class="Button variant-classic color-violet">Violet</div>
-        <div class="Button variant-classic color-indigo">Indigo</div>
-        <div class="Button variant-classic color-blue">Blue</div>
-        <div class="Button variant-classic color-green">Green</div>
-      </div>
+        <div class="Name">Gray</div>
+        <div class="Swatch" style="background-color: var(--gray-s1);"></div>
+        <div class="Swatch" style="background-color: var(--gray-s2);"></div>
+        <div class="Swatch" style="background-color: var(--gray-c1);"></div>
+        <div class="Swatch" style="background-color: var(--gray-c2);"></div>
+        <div class="Swatch" style="background-color: var(--gray-c3);"></div>
+        <div class="Swatch" style="background-color: var(--gray-o1);"></div>
+        <div class="Swatch" style="background-color: var(--gray-o2);"></div>
+        <div class="Swatch" style="background-color: var(--gray-o3);"></div>
+        <div class="Swatch" style="background-color: var(--gray-p1);"></div>
+        <div class="Swatch" style="background-color: var(--gray-p2);"></div>
+        <div class="Swatch" style="background-color: var(--gray-p3);"></div>
+        <div class="Swatch" style="background-color: var(--gray-t1);"></div>
+        <div class="Swatch" style="background-color: var(--gray-t2);"></div>
   
-      <div class="d-f wr-w g-2">
-        <div class="Button variant-outlined color-gray">Gray</div>
-        <div class="Button variant-outlined color-orange">Orange</div>
-        <div class="Button variant-outlined color-red">Red</div>
-        <div class="Button variant-outlined color-pink">Pink</div>
-        <div class="Button variant-outlined color-purple">Purple</div>
-        <div class="Button variant-outlined color-violet">Violet</div>
-        <div class="Button variant-outlined color-indigo">Indigo</div>
-        <div class="Button variant-outlined color-blue">Blue</div>
-        <div class="Button variant-outlined color-green">Green</div>
+        <div class="Name">Mauve</div>
+        <div class="Swatch" style="background-color: var(--mauve-s1);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-s2);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-c1);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-c2);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-c3);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-o1);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-o2);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-o3);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-p1);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-p2);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-p3);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-t1);"></div>
+        <div class="Swatch" style="background-color: var(--mauve-t2);"></div>
+  
+        <div class="Name">Slate</div>
+        <div class="Swatch" style="background-color: var(--slate-s1);"></div>
+        <div class="Swatch" style="background-color: var(--slate-s2);"></div>
+        <div class="Swatch" style="background-color: var(--slate-c1);"></div>
+        <div class="Swatch" style="background-color: var(--slate-c2);"></div>
+        <div class="Swatch" style="background-color: var(--slate-c3);"></div>
+        <div class="Swatch" style="background-color: var(--slate-o1);"></div>
+        <div class="Swatch" style="background-color: var(--slate-o2);"></div>
+        <div class="Swatch" style="background-color: var(--slate-o3);"></div>
+        <div class="Swatch" style="background-color: var(--slate-p1);"></div>
+        <div class="Swatch" style="background-color: var(--slate-p2);"></div>
+        <div class="Swatch" style="background-color: var(--slate-p3);"></div>
+        <div class="Swatch" style="background-color: var(--slate-t1);"></div>
+        <div class="Swatch" style="background-color: var(--slate-t2);"></div>
+  
+        <div class="Name">Sage</div>
+        <div class="Swatch" style="background-color: var(--sage-s1);"></div>
+        <div class="Swatch" style="background-color: var(--sage-s2);"></div>
+        <div class="Swatch" style="background-color: var(--sage-c1);"></div>
+        <div class="Swatch" style="background-color: var(--sage-c2);"></div>
+        <div class="Swatch" style="background-color: var(--sage-c3);"></div>
+        <div class="Swatch" style="background-color: var(--sage-o1);"></div>
+        <div class="Swatch" style="background-color: var(--sage-o2);"></div>
+        <div class="Swatch" style="background-color: var(--sage-o3);"></div>
+        <div class="Swatch" style="background-color: var(--sage-p1);"></div>
+        <div class="Swatch" style="background-color: var(--sage-p2);"></div>
+        <div class="Swatch" style="background-color: var(--sage-p3);"></div>
+        <div class="Swatch" style="background-color: var(--sage-t1);"></div>
+        <div class="Swatch" style="background-color: var(--sage-t2);"></div>
+  
+        <div class="Name">Olive</div>
+        <div class="Swatch" style="background-color: var(--olive-s1);"></div>
+        <div class="Swatch" style="background-color: var(--olive-s2);"></div>
+        <div class="Swatch" style="background-color: var(--olive-c1);"></div>
+        <div class="Swatch" style="background-color: var(--olive-c2);"></div>
+        <div class="Swatch" style="background-color: var(--olive-c3);"></div>
+        <div class="Swatch" style="background-color: var(--olive-o1);"></div>
+        <div class="Swatch" style="background-color: var(--olive-o2);"></div>
+        <div class="Swatch" style="background-color: var(--olive-o3);"></div>
+        <div class="Swatch" style="background-color: var(--olive-p1);"></div>
+        <div class="Swatch" style="background-color: var(--olive-p2);"></div>
+        <div class="Swatch" style="background-color: var(--olive-p3);"></div>
+        <div class="Swatch" style="background-color: var(--olive-t1);"></div>
+        <div class="Swatch" style="background-color: var(--olive-t2);"></div>
+  
+        <div class="Name">Sand</div>
+        <div class="Swatch" style="background-color: var(--sand-s1);"></div>
+        <div class="Swatch" style="background-color: var(--sand-s2);"></div>
+        <div class="Swatch" style="background-color: var(--sand-c1);"></div>
+        <div class="Swatch" style="background-color: var(--sand-c2);"></div>
+        <div class="Swatch" style="background-color: var(--sand-c3);"></div>
+        <div class="Swatch" style="background-color: var(--sand-o1);"></div>
+        <div class="Swatch" style="background-color: var(--sand-o2);"></div>
+        <div class="Swatch" style="background-color: var(--sand-o3);"></div>
+        <div class="Swatch" style="background-color: var(--sand-p1);"></div>
+        <div class="Swatch" style="background-color: var(--sand-p2);"></div>
+        <div class="Swatch" style="background-color: var(--sand-p3);"></div>
+        <div class="Swatch" style="background-color: var(--sand-t1);"></div>
+        <div class="Swatch" style="background-color: var(--sand-t2);"></div>
+  
+        <div class="Name">Amber</div>
+        <div class="Swatch" style="background-color: var(--amber-s1);"></div>
+        <div class="Swatch" style="background-color: var(--amber-s2);"></div>
+        <div class="Swatch" style="background-color: var(--amber-c1);"></div>
+        <div class="Swatch" style="background-color: var(--amber-c2);"></div>
+        <div class="Swatch" style="background-color: var(--amber-c3);"></div>
+        <div class="Swatch" style="background-color: var(--amber-o1);"></div>
+        <div class="Swatch" style="background-color: var(--amber-o2);"></div>
+        <div class="Swatch" style="background-color: var(--amber-o3);"></div>
+        <div class="Swatch" style="background-color: var(--amber-p1);"></div>
+        <div class="Swatch" style="background-color: var(--amber-p2);"></div>
+        <div class="Swatch" style="background-color: var(--amber-p3);"></div>
+        <div class="Swatch" style="background-color: var(--amber-t1);"></div>
+        <div class="Swatch" style="background-color: var(--amber-t2);"></div>
+  
+        <div class="Name">Orange</div>
+        <div class="Swatch" style="background-color: var(--orange-s1);"></div>
+        <div class="Swatch" style="background-color: var(--orange-s2);"></div>
+        <div class="Swatch" style="background-color: var(--orange-c1);"></div>
+        <div class="Swatch" style="background-color: var(--orange-c2);"></div>
+        <div class="Swatch" style="background-color: var(--orange-c3);"></div>
+        <div class="Swatch" style="background-color: var(--orange-o1);"></div>
+        <div class="Swatch" style="background-color: var(--orange-o2);"></div>
+        <div class="Swatch" style="background-color: var(--orange-o3);"></div>
+        <div class="Swatch" style="background-color: var(--orange-p1);"></div>
+        <div class="Swatch" style="background-color: var(--orange-p2);"></div>
+        <div class="Swatch" style="background-color: var(--orange-p3);"></div>
+        <div class="Swatch" style="background-color: var(--orange-t1);"></div>
+        <div class="Swatch" style="background-color: var(--orange-t2);"></div>
+  
+        <div class="Name">Red</div>
+        <div class="Swatch" style="background-color: var(--red-s1);"></div>
+        <div class="Swatch" style="background-color: var(--red-s2);"></div>
+        <div class="Swatch" style="background-color: var(--red-c1);"></div>
+        <div class="Swatch" style="background-color: var(--red-c2);"></div>
+        <div class="Swatch" style="background-color: var(--red-c3);"></div>
+        <div class="Swatch" style="background-color: var(--red-o1);"></div>
+        <div class="Swatch" style="background-color: var(--red-o2);"></div>
+        <div class="Swatch" style="background-color: var(--red-o3);"></div>
+        <div class="Swatch" style="background-color: var(--red-p1);"></div>
+        <div class="Swatch" style="background-color: var(--red-p2);"></div>
+        <div class="Swatch" style="background-color: var(--red-p3);"></div>
+        <div class="Swatch" style="background-color: var(--red-t1);"></div>
+        <div class="Swatch" style="background-color: var(--red-t2);"></div>
+  
+        <div class="Name">Pink</div>
+        <div class="Swatch" style="background-color: var(--pink-s1);"></div>
+        <div class="Swatch" style="background-color: var(--pink-s2);"></div>
+        <div class="Swatch" style="background-color: var(--pink-c1);"></div>
+        <div class="Swatch" style="background-color: var(--pink-c2);"></div>
+        <div class="Swatch" style="background-color: var(--pink-c3);"></div>
+        <div class="Swatch" style="background-color: var(--pink-o1);"></div>
+        <div class="Swatch" style="background-color: var(--pink-o2);"></div>
+        <div class="Swatch" style="background-color: var(--pink-o3);"></div>
+        <div class="Swatch" style="background-color: var(--pink-p1);"></div>
+        <div class="Swatch" style="background-color: var(--pink-p2);"></div>
+        <div class="Swatch" style="background-color: var(--pink-p3);"></div>
+        <div class="Swatch" style="background-color: var(--pink-t1);"></div>
+        <div class="Swatch" style="background-color: var(--pink-t2);"></div>
+  
+        <div class="Name">Plum</div>
+        <div class="Swatch" style="background-color: var(--plum-s1);"></div>
+        <div class="Swatch" style="background-color: var(--plum-s2);"></div>
+        <div class="Swatch" style="background-color: var(--plum-c1);"></div>
+        <div class="Swatch" style="background-color: var(--plum-c2);"></div>
+        <div class="Swatch" style="background-color: var(--plum-c3);"></div>
+        <div class="Swatch" style="background-color: var(--plum-o1);"></div>
+        <div class="Swatch" style="background-color: var(--plum-o2);"></div>
+        <div class="Swatch" style="background-color: var(--plum-o3);"></div>
+        <div class="Swatch" style="background-color: var(--plum-p1);"></div>
+        <div class="Swatch" style="background-color: var(--plum-p2);"></div>
+        <div class="Swatch" style="background-color: var(--plum-p3);"></div>
+        <div class="Swatch" style="background-color: var(--plum-t1);"></div>
+        <div class="Swatch" style="background-color: var(--plum-t2);"></div>
+  
+        <div class="Name">Purple</div>
+        <div class="Swatch" style="background-color: var(--purple-s1);"></div>
+        <div class="Swatch" style="background-color: var(--purple-s2);"></div>
+        <div class="Swatch" style="background-color: var(--purple-c1);"></div>
+        <div class="Swatch" style="background-color: var(--purple-c2);"></div>
+        <div class="Swatch" style="background-color: var(--purple-c3);"></div>
+        <div class="Swatch" style="background-color: var(--purple-o1);"></div>
+        <div class="Swatch" style="background-color: var(--purple-o2);"></div>
+        <div class="Swatch" style="background-color: var(--purple-o3);"></div>
+        <div class="Swatch" style="background-color: var(--purple-p1);"></div>
+        <div class="Swatch" style="background-color: var(--purple-p2);"></div>
+        <div class="Swatch" style="background-color: var(--purple-p3);"></div>
+        <div class="Swatch" style="background-color: var(--purple-t1);"></div>
+        <div class="Swatch" style="background-color: var(--purple-t2);"></div>
+  
+        <div class="Name">Violet</div>
+        <div class="Swatch" style="background-color: var(--violet-s1);"></div>
+        <div class="Swatch" style="background-color: var(--violet-s2);"></div>
+        <div class="Swatch" style="background-color: var(--violet-c1);"></div>
+        <div class="Swatch" style="background-color: var(--violet-c2);"></div>
+        <div class="Swatch" style="background-color: var(--violet-c3);"></div>
+        <div class="Swatch" style="background-color: var(--violet-o1);"></div>
+        <div class="Swatch" style="background-color: var(--violet-o2);"></div>
+        <div class="Swatch" style="background-color: var(--violet-o3);"></div>
+        <div class="Swatch" style="background-color: var(--violet-p1);"></div>
+        <div class="Swatch" style="background-color: var(--violet-p2);"></div>
+        <div class="Swatch" style="background-color: var(--violet-p3);"></div>
+        <div class="Swatch" style="background-color: var(--violet-t1);"></div>
+        <div class="Swatch" style="background-color: var(--violet-t2);"></div>
+  
+        <div class="Name">Indigo</div>
+        <div class="Swatch" style="background-color: var(--indigo-s1);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-s2);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-c1);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-c2);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-c3);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-o1);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-o2);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-o3);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-p1);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-p2);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-p3);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-t1);"></div>
+        <div class="Swatch" style="background-color: var(--indigo-t2);"></div>
+  
+        <div class="Name">Blue</div>
+        <div class="Swatch" style="background-color: var(--blue-s1);"></div>
+        <div class="Swatch" style="background-color: var(--blue-s2);"></div>
+        <div class="Swatch" style="background-color: var(--blue-c1);"></div>
+        <div class="Swatch" style="background-color: var(--blue-c2);"></div>
+        <div class="Swatch" style="background-color: var(--blue-c3);"></div>
+        <div class="Swatch" style="background-color: var(--blue-o1);"></div>
+        <div class="Swatch" style="background-color: var(--blue-o2);"></div>
+        <div class="Swatch" style="background-color: var(--blue-o3);"></div>
+        <div class="Swatch" style="background-color: var(--blue-p1);"></div>
+        <div class="Swatch" style="background-color: var(--blue-p2);"></div>
+        <div class="Swatch" style="background-color: var(--blue-p3);"></div>
+        <div class="Swatch" style="background-color: var(--blue-t1);"></div>
+        <div class="Swatch" style="background-color: var(--blue-t2);"></div>
+  
+        <div class="Name">Teal</div>
+        <div class="Swatch" style="background-color: var(--teal-s1);"></div>
+        <div class="Swatch" style="background-color: var(--teal-s2);"></div>
+        <div class="Swatch" style="background-color: var(--teal-c1);"></div>
+        <div class="Swatch" style="background-color: var(--teal-c2);"></div>
+        <div class="Swatch" style="background-color: var(--teal-c3);"></div>
+        <div class="Swatch" style="background-color: var(--teal-o1);"></div>
+        <div class="Swatch" style="background-color: var(--teal-o2);"></div>
+        <div class="Swatch" style="background-color: var(--teal-o3);"></div>
+        <div class="Swatch" style="background-color: var(--teal-p1);"></div>
+        <div class="Swatch" style="background-color: var(--teal-p2);"></div>
+        <div class="Swatch" style="background-color: var(--teal-p3);"></div>
+        <div class="Swatch" style="background-color: var(--teal-t1);"></div>
+        <div class="Swatch" style="background-color: var(--teal-t2);"></div>
+  
+        <div class="Name">Green</div>
+        <div class="Swatch" style="background-color: var(--green-s1);"></div>
+        <div class="Swatch" style="background-color: var(--green-s2);"></div>
+        <div class="Swatch" style="background-color: var(--green-c1);"></div>
+        <div class="Swatch" style="background-color: var(--green-c2);"></div>
+        <div class="Swatch" style="background-color: var(--green-c3);"></div>
+        <div class="Swatch" style="background-color: var(--green-o1);"></div>
+        <div class="Swatch" style="background-color: var(--green-o2);"></div>
+        <div class="Swatch" style="background-color: var(--green-o3);"></div>
+        <div class="Swatch" style="background-color: var(--green-p1);"></div>
+        <div class="Swatch" style="background-color: var(--green-p2);"></div>
+        <div class="Swatch" style="background-color: var(--green-p3);"></div>
+        <div class="Swatch" style="background-color: var(--green-t1);"></div>
+        <div class="Swatch" style="background-color: var(--green-t2);"></div>
       </div>
+    </div>
+    
+    <div style="border-right: 1px solid gainsboro; overflow-y: scroll; flex-shrink: 0; box-sizing: border-box; padding: 16px; height: calc(100% - 49px)">
+      <div class="d-f fd-c g-8">
+        <div class="d-f fw-w g-2">
+          <div class="Button variant-filled color-gray">Gray</div>
+          <div class="Button variant-filled color-mauve">Mauve</div>
+          <div class="Button variant-filled color-slate">Slate</div>
+          <div class="Button variant-filled color-sage">Sage</div>
+          <div class="Button variant-filled color-olive">Olive</div>
+          <div class="Button variant-filled color-sand">Sand</div>
+          <div class="Button variant-filled color-amber">Amber</div>
+          <div class="Button variant-filled color-orange">Orange</div>
+          <div class="Button variant-filled color-red">Red</div>
+          <div class="Button variant-filled color-pink">Pink</div>
+          <div class="Button variant-filled color-purple">Purple</div>
+          <div class="Button variant-filled color-violet">Violet</div>
+          <div class="Button variant-filled color-indigo">Indigo</div>
+          <div class="Button variant-filled color-blue">Blue</div>
+          <div class="Button variant-filled color-green">Green</div>
+        </div>
+    
+        <div class="d-f wr-w g-2">
+          <div class="Button variant-soft color-gray">Gray</div>
+          <div class="Button variant-soft color-orange">Orange</div>
+          <div class="Button variant-soft color-red">Red</div>
+          <div class="Button variant-soft color-pink">Pink</div>
+          <div class="Button variant-soft color-purple">Purple</div>
+          <div class="Button variant-soft color-violet">Violet</div>
+          <div class="Button variant-soft color-indigo">Indigo</div>
+          <div class="Button variant-soft color-blue">Blue</div>
+          <div class="Button variant-soft color-green">Green</div>
+        </div>
 
-      <div class="d-f fd-c g-2">
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--gray-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--gray-s2);"></div>
+        <div class="d-f wr-w g-2">
+          <div class="Button variant-text color-gray">Gray</div>
+          <div class="Button variant-text color-orange">Orange</div>
+          <div class="Button variant-text color-red">Red</div>
+          <div class="Button variant-text color-pink">Pink</div>
+          <div class="Button variant-text color-purple">Purple</div>
+          <div class="Button variant-text color-violet">Violet</div>
+          <div class="Button variant-text color-indigo">Indigo</div>
+          <div class="Button variant-text color-blue">Blue</div>
+          <div class="Button variant-text color-green">Green</div>
         </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--orange-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--orange-s2);"></div>
+
+        <div class="d-f wr-w g-2">
+          <div class="Button variant-classic color-gray">Gray</div>
+          <div class="Button variant-classic color-orange">Orange</div>
+          <div class="Button variant-classic color-red">Red</div>
+          <div class="Button variant-classic color-pink">Pink</div>
+          <div class="Button variant-classic color-purple">Purple</div>
+          <div class="Button variant-classic color-violet">Violet</div>
+          <div class="Button variant-classic color-indigo">Indigo</div>
+          <div class="Button variant-classic color-blue">Blue</div>
+          <div class="Button variant-classic color-green">Green</div>
         </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--red-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--red-s2);"></div>
+    
+        <div class="d-f wr-w g-2">
+          <div class="Button variant-outlined color-gray">Gray</div>
+          <div class="Button variant-outlined color-orange">Orange</div>
+          <div class="Button variant-outlined color-red">Red</div>
+          <div class="Button variant-outlined color-pink">Pink</div>
+          <div class="Button variant-outlined color-purple">Purple</div>
+          <div class="Button variant-outlined color-violet">Violet</div>
+          <div class="Button variant-outlined color-indigo">Indigo</div>
+          <div class="Button variant-outlined color-blue">Blue</div>
+          <div class="Button variant-outlined color-green">Green</div>
         </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--pink-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--pink-s2);"></div>
-        </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--purple-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--purple-s2);"></div>
-        </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--violet-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--violet-s2);"></div>
-        </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--indigo-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--indigo-s2);"></div>
-        </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--blue-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--blue-s2);"></div>
-        </div>
-        <div class="d-f" style="margin-left: -12.5vw;">
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--green-s1);"></div>
-          <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--green-s2);"></div>
+
+        <div class="d-f fd-c g-2">
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--gray-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--gray-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--mauve-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--mauve-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--slate-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--slate-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sage-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sage-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--olive-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--olive-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sand-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sand-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--amber-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--amber-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--orange-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--orange-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--red-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--red-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--pink-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--pink-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--plum-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--plum-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--purple-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--purple-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--violet-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--violet-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--indigo-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--indigo-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--blue-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--blue-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--teal-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--teal-s2);"></div>
+          </div>
+          <div class="d-f" style="margin-left: -25vw;">
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--green-s1);"></div>
+            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--green-s2);"></div>
+          </div>
         </div>
       </div>
     </div>
