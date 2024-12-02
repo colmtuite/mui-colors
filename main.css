@@ -17,7 +17,7 @@ body {
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid var(--gray-o1);
 }
 
 .Grid {
