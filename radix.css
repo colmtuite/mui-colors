@@ -1,0 +1,122 @@
+:root {
+  --gray-s1: hsl(0, 0%, 99%);
+  --gray-s2: hsl(0, 0%, 98%);
+  --gray-c1: hsl(0, 0%, 94%);
+  --gray-c2: hsl(0, 0%, 91%);
+  --gray-c3: hsl(0, 0%, 88%);
+  --gray-o1: hsl(0, 0%, 85%);
+  --gray-o2: hsl(0, 0%, 81%);
+  --gray-o3: hsl(0, 0%, 73%);
+  --gray-p1: hsl(0, 0%, 55%);
+  --gray-p2: hsl(0, 0%, 51%);
+  --gray-t1: hsl(0, 0%, 39%);
+  --gray-t2: hsl(0, 0%, 13%);
+
+  --orange-s1: hsl(20, 60%, 99%);
+  --orange-s2: hsl(33, 100%, 96%);
+  --orange-c1: hsl(37, 100%, 92%);
+  --orange-c2: hsl(34, 100%, 85%);
+  --orange-c3: hsl(33, 100%, 80%);
+  --orange-o1: hsl(30, 100%, 75%);
+  --orange-o2: hsl(27, 87%, 71%);
+  --orange-o3: hsl(25, 80%, 63%);
+  --orange-p1: hsl(23, 93%, 53%);
+  --orange-p2: hsl(24, 100%, 47%);
+  --orange-t1: hsl(23, 100%, 40%);
+  --orange-t2: hsl(16, 50%, 23%);
+
+  --red-s1: hsl(0, 100%, 99%);
+  --red-s2: hsl(0, 100%, 98%);
+  --red-c1: hsl(357, 90%, 96%);
+  --red-c2: hsl(358, 100%, 93%);
+  --red-c3: hsl(359, 100%, 90%);
+  --red-o1: hsl(359, 94%, 87%);
+  --red-o2: hsl(359, 77%, 81%);
+  --red-o3: hsl(359, 70%, 74%);
+  --red-p1: hsl(358, 75%, 59%);
+  --red-p2: hsl(358, 69%, 55%);
+  --red-t1: hsl(358, 65%, 49%);
+  --red-t2: hsl(351, 63%, 24%);
+
+  --pink-s1: hsl(320, 100%, 99%);
+  --pink-s2: hsl(326, 78%, 98%);
+  --pink-c1: hsl(326, 91%, 95%);
+  --pink-c2: hsl(323, 79%, 92%);
+  --pink-c3: hsl(323, 69%, 89%);
+  --pink-o1: hsl(323, 60%, 84%);
+  --pink-o2: hsl(323, 55%, 79%);
+  --pink-o3: hsl(322, 52%, 72%);
+  --pink-p1: hsl(322, 65%, 55%);
+  --pink-p2: hsl(322, 61%, 52%);
+  --pink-t1: hsl(322, 65%, 46%);
+  --pink-t2: hsl(320, 70%, 23%);
+
+  --purple-s1: hsl(300, 50%, 99%);
+  --purple-s2: hsl(274, 78%, 98%);
+  --purple-c1: hsl(275, 89%, 96%);
+  --purple-c2: hsl(277, 81%, 94%);
+  --purple-c3: hsl(275, 75%, 91%);
+  --purple-o1: hsl(275, 69%, 86%);
+  --purple-o2: hsl(273, 62%, 81%);
+  --purple-o3: hsl(272, 60%, 74%);
+  --purple-p1: hsl(272, 51%, 54%);
+  --purple-p2: hsl(272, 45%, 50%);
+  --purple-t1: hsl(272, 45%, 49%);
+  --purple-t2: hsl(270, 50%, 25%);
+    
+  --violet-s1: hsl(270, 50%, 99%);
+  --violet-s2: hsl(257, 100%, 99%);
+  --violet-c1: hsl(257, 88%, 97%);
+  --violet-c2: hsl(256, 100%, 95%);
+  --violet-c3: hsl(253, 100%, 93%);
+  --violet-o1: hsl(252, 96%, 89%);
+  --violet-o2: hsl(252, 76%, 84%);
+  --violet-o3: hsl(252, 69%, 76%);
+  --violet-p1: hsl(252, 56%, 57%);
+  --violet-p2: hsl(252, 50%, 54%);
+  --violet-t1: hsl(252, 43%, 52%);
+  --violet-t2: hsl(249, 43%, 26%);
+    
+  --indigo-s1: hsl(240, 33%, 99%);
+  --indigo-s2: hsl(225, 100%, 98%);
+  --indigo-c1: hsl(222, 89%, 96%);
+  --indigo-c2: hsl(224, 100%, 94%);
+  --indigo-c3: hsl(224, 100%, 91%);
+  --indigo-o1: hsl(225, 100%, 88%);
+  --indigo-o2: hsl(226, 87%, 82%);
+  --indigo-o3: hsl(226, 75%, 75%);
+  --indigo-p1: hsl(226, 70%, 55%);
+  --indigo-p2: hsl(226, 65%, 52%);
+  --indigo-t1: hsl(226, 56%, 50%);
+  --indigo-t2: hsl(226, 50%, 24%);
+    
+  --blue-s1: hsl(210, 100%, 99%);
+  --blue-s2: hsl(207, 100%, 98%);
+  --blue-c1: hsl(205, 92%, 95%);
+  --blue-c2: hsl(203, 100%, 92%);
+  --blue-c3: hsl(206, 100%, 88%);
+  --blue-o1: hsl(207, 93%, 83%);
+  --blue-o2: hsl(207, 85%, 76%);
+  --blue-o3: hsl(206, 82%, 65%);
+  --blue-p1: hsl(206, 100%, 50%);
+  --blue-p2: hsl(207, 96%, 48%);
+  --blue-t1: hsl(208, 88%, 43%);
+  --blue-t2: hsl(216, 71%, 23%);
+
+  --green-s1: hsl(140, 60%, 99%);
+  --green-s2: hsl(137, 47%, 97%);
+  --green-c1: hsl(139, 47%, 93%);
+  --green-c2: hsl(140, 49%, 89%);
+  --green-c3: hsl(142, 44%, 84%);
+  --green-o1: hsl(144, 41%, 77%);
+  --green-o2: hsl(146, 40%, 68%);
+  --green-o3: hsl(151, 40%, 54%);
+  --green-p1: hsl(151, 55%, 42%);
+  --green-p2: hsl(152, 56%, 39%);
+  --green-t1: hsl(154, 60%, 32%);
+  --green-t2: hsl(155, 40%, 16%);
+}
+
+.theme-dark {
+  color-scheme: dark;
+}

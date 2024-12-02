@@ -1,22 +1,37 @@
 body {
   margin: 0;
   font-family: "graphik trial";
+  font-size: 14px;
+  min-height: 2000px;
+  color: hsl(0 0% 20%);
 }
 
 .Grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+  margin-bottom: 64px;
 }
 
 .Swatch {
+  display: inline-flex;
   box-sizing: border-box;
   aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.Name {
+  display: inline-flex;
+  box-sizing: border-box;
+  grid-column: 1/3;
+  align-items: center;
 }
 
 .Container {
   box-sizing: border-box;
-  max-width: 900px;
+  max-width: 75vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,17 +48,8 @@ body {
   gap: 1px;
 }
 
-.button {
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  color: white;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
-  user-select: none;
-  border-radius: 9999px;
-  height: 48px;
-}
+.d-f { display: flex; }
+.fw-w { flex-wrap: wrap; }
+.g-2 { gap: 8px }
+.g-8 { gap: 40px }
+.fd-c { flex-direction: column; }

@@ -1,0 +1,147 @@
+.Button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  user-select: none;
+  border-radius: 9999px;
+  height: 32px;
+}
+
+.Button.variant-filled { color: white; }
+.Button.variant-filled.color-gray { background-color: var(--gray-p1); }
+.Button.variant-filled.color-orange { background-color: var(--orange-p1); }
+.Button.variant-filled.color-red { background-color: var(--red-p1); }
+.Button.variant-filled.color-pink { background-color: var(--pink-p1); }
+.Button.variant-filled.color-purple { background-color: var(--purple-p1); }
+.Button.variant-filled.color-violet { background-color: var(--violet-p1); }
+.Button.variant-filled.color-indigo { background-color: var(--indigo-p1); }
+.Button.variant-filled.color-blue { background-color: var(--blue-p1); }
+.Button.variant-filled.color-green { background-color: var(--green-p1); }
+
+.Button.variant-soft.color-gray { background-color: var(--gray-c1); color: var(--gray-t1); }
+.Button.variant-soft.color-orange { background-color: var(--orange-c1); color: var(--orange-t1); }
+.Button.variant-soft.color-red { background-color: var(--red-c1); color: var(--red-t1); }
+.Button.variant-soft.color-pink { background-color: var(--pink-c1); color: var(--pink-t1); }
+.Button.variant-soft.color-purple { background-color: var(--purple-c1); color: var(--purple-t1); }
+.Button.variant-soft.color-violet { background-color: var(--violet-c1); color: var(--violet-t1); }
+.Button.variant-soft.color-indigo { background-color: var(--indigo-c1); color: var(--indigo-t1); }
+.Button.variant-soft.color-blue { background-color: var(--blue-c1); color: var(--blue-t1); }
+.Button.variant-soft.color-green { background-color: var(--green-c1); color: var(--green-t1); }
+
+.Button.variant-soft.color-gray:hover { background-color: var(--gray-c2); }
+.Button.variant-soft.color-orange:hover { background-color: var(--orange-c2); }
+.Button.variant-soft.color-red:hover { background-color: var(--red-c2); }
+.Button.variant-soft.color-pink:hover { background-color: var(--pink-c2); }
+.Button.variant-soft.color-purple:hover { background-color: var(--purple-c2); }
+.Button.variant-soft.color-violet:hover { background-color: var(--violet-c2); }
+.Button.variant-soft.color-indigo:hover { background-color: var(--indigo-c2); }
+.Button.variant-soft.color-blue:hover { background-color: var(--blue-c2); }
+.Button.variant-soft.color-green:hover { background-color: var(--green-c2); }
+
+.Button.variant-soft.color-gray:active { background-color: var(--gray-c3); }
+.Button.variant-soft.color-orange:active { background-color: var(--orange-c3); }
+.Button.variant-soft.color-red:active { background-color: var(--red-c3); }
+.Button.variant-soft.color-pink:active { background-color: var(--pink-c3); }
+.Button.variant-soft.color-purple:active { background-color: var(--purple-c3); }
+.Button.variant-soft.color-violet:active { background-color: var(--violet-c3); }
+.Button.variant-soft.color-indigo:active { background-color: var(--indigo-c3); }
+.Button.variant-soft.color-blue:active { background-color: var(--blue-c3); }
+.Button.variant-soft.color-green:active { background-color: var(--green-c3); }
+
+.Button.variant-text.color-gray { color: var(--gray-t1); }
+.Button.variant-text.color-orange { color: var(--orange-t1); }
+.Button.variant-text.color-red { color: var(--red-t1); }
+.Button.variant-text.color-pink { color: var(--pink-t1); }
+.Button.variant-text.color-purple { color: var(--purple-t1); }
+.Button.variant-text.color-violet { color: var(--violet-t1); }
+.Button.variant-text.color-indigo { color: var(--indigo-t1); }
+.Button.variant-text.color-blue { color: var(--blue-t1); }
+.Button.variant-text.color-green { color: var(--green-t1); }
+
+.Button.variant-text.color-gray:hover { background-color: var(--gray-c2); }
+.Button.variant-text.color-orange:hover { background-color: var(--orange-c2); }
+.Button.variant-text.color-red:hover { background-color: var(--red-c2); }
+.Button.variant-text.color-pink:hover { background-color: var(--pink-c2); }
+.Button.variant-text.color-purple:hover { background-color: var(--purple-c2); }
+.Button.variant-text.color-violet:hover { background-color: var(--violet-c2); }
+.Button.variant-text.color-indigo:hover { background-color: var(--indigo-c2); }
+.Button.variant-text.color-blue:hover { background-color: var(--blue-c2); }
+.Button.variant-text.color-green:hover { background-color: var(--green-c2); }
+
+.Button.variant-text.color-gray:active { background-color: var(--gray-c3); }
+.Button.variant-text.color-orange:active { background-color: var(--orange-c3); }
+.Button.variant-text.color-red:active { background-color: var(--red-c3); }
+.Button.variant-text.color-pink:active { background-color: var(--pink-c3); }
+.Button.variant-text.color-purple:active { background-color: var(--purple-c3); }
+.Button.variant-text.color-violet:active { background-color: var(--violet-c3); }
+.Button.variant-text.color-indigo:active { background-color: var(--indigo-c3); }
+.Button.variant-text.color-blue:active { background-color: var(--blue-c3); }
+.Button.variant-text.color-green:active { background-color: var(--green-c3); }
+
+.Button.variant-classic { border-width: 1px; border-style: solid; }
+.Button.variant-classic.color-gray { background-color: var(--gray-s1); border-color: var(--gray-o2); color: var(--gray-t1); }
+.Button.variant-classic.color-orange { background-color: var(--orange-s1); border-color: var(--orange-o2); color: var(--orange-t1); }
+.Button.variant-classic.color-red { background-color: var(--red-s1); border-color: var(--red-o2); color: var(--red-t1); }
+.Button.variant-classic.color-pink { background-color: var(--pink-s1); border-color: var(--pink-o2); color: var(--pink-t1); }
+.Button.variant-classic.color-purple { background-color: var(--purple-s1); border-color: var(--purple-o2); color: var(--purple-t1); }
+.Button.variant-classic.color-violet { background-color: var(--violet-s1); border-color: var(--violet-o2); color: var(--violet-t1); }
+.Button.variant-classic.color-indigo { background-color: var(--indigo-s1); border-color: var(--indigo-o2); color: var(--indigo-t1); }
+.Button.variant-classic.color-blue { background-color: var(--blue-s1); border-color: var(--blue-o2); color: var(--blue-t1); }
+.Button.variant-classic.color-green { background-color: var(--green-s1); border-color: var(--green-o2); color: var(--green-t1); }
+
+.Button.variant-classic.color-gray:hover { border-color: var(--gray-o3); }
+.Button.variant-classic.color-orange:hover { border-color: var(--orange-o3); }
+.Button.variant-classic.color-red:hover { border-color: var(--red-o3); }
+.Button.variant-classic.color-pink:hover { border-color: var(--pink-o3); }
+.Button.variant-classic.color-purple:hover { border-color: var(--purple-o3); }
+.Button.variant-classic.color-violet:hover { border-color: var(--violet-o3); }
+.Button.variant-classic.color-indigo:hover { border-color: var(--indigo-o3); }
+.Button.variant-classic.color-blue:hover { border-color: var(--blue-o3); }
+.Button.variant-classic.color-green:hover { border-color: var(--green-o3); }
+
+.Button.variant-classic.color-gray:active { background-color: var(--gray-c3); }
+.Button.variant-classic.color-orange:active { background-color: var(--orange-c3); }
+.Button.variant-classic.color-red:active { background-color: var(--red-c3); }
+.Button.variant-classic.color-pink:active { background-color: var(--pink-c3); }
+.Button.variant-classic.color-purple:active { background-color: var(--purple-c3); }
+.Button.variant-classic.color-violet:active { background-color: var(--violet-c3); }
+.Button.variant-classic.color-indigo:active { background-color: var(--indigo-c3); }
+.Button.variant-classic.color-blue:active { background-color: var(--blue-c3); }
+.Button.variant-classic.color-green:active { background-color: var(--green-c3); }
+
+.Button.variant-outlined { border-width: 1px; border-style: solid; }
+.Button.variant-outlined.color-gray { border-color: var(--gray-p1); color: var(--gray-t1); }
+.Button.variant-outlined.color-orange { border-color: var(--orange-p1); color: var(--orange-t1); }
+.Button.variant-outlined.color-red { border-color: var(--red-p1); color: var(--red-t1); }
+.Button.variant-outlined.color-pink { border-color: var(--pink-p1); color: var(--pink-t1); }
+.Button.variant-outlined.color-purple { border-color: var(--purple-p1); color: var(--purple-t1); }
+.Button.variant-outlined.color-violet { border-color: var(--violet-p1); color: var(--violet-t1); }
+.Button.variant-outlined.color-indigo { border-color: var(--indigo-p1); color: var(--indigo-t1); }
+.Button.variant-outlined.color-blue { border-color: var(--blue-p1); color: var(--blue-t1); }
+.Button.variant-outlined.color-green { border-color: var(--green-p1); color: var(--green-t1); }
+
+.Button.variant-outlined.color-gray:hover { background-color: var(--gray-s1); }
+.Button.variant-outlined.color-orange:hover { background-color: var(--orange-s1); }
+.Button.variant-outlined.color-red:hover { background-color: var(--red-s1); }
+.Button.variant-outlined.color-pink:hover { background-color: var(--pink-s1); }
+.Button.variant-outlined.color-purple:hover { background-color: var(--purple-s1); }
+.Button.variant-outlined.color-violet:hover { background-color: var(--violet-s1); }
+.Button.variant-outlined.color-indigo:hover { background-color: var(--indigo-s1); }
+.Button.variant-outlined.color-blue:hover { background-color: var(--blue-s1); }
+.Button.variant-outlined.color-green:hover { background-color: var(--green-s1); }
+
+.Button.variant-outlined.color-gray:active { background-color: var(--gray-s2); }
+.Button.variant-outlined.color-orange:active { background-color: var(--orange-s2); }
+.Button.variant-outlined.color-red:active { background-color: var(--red-s2); }
+.Button.variant-outlined.color-pink:active { background-color: var(--pink-s2); }
+.Button.variant-outlined.color-purple:active { background-color: var(--purple-s2); }
+.Button.variant-outlined.color-violet:active { background-color: var(--violet-s2); }
+.Button.variant-outlined.color-indigo:active { background-color: var(--indigo-s2); }
+.Button.variant-outlined.color-blue:active { background-color: var(--blue-s2); }
+.Button.variant-outlined.color-green:active { background-color: var(--green-s2); }
