@@ -9,15 +9,15 @@
 </head>
 <body>
   <header class="Header">
-    <div class="d-f">
+    <div class="d-f jc-c g-8">
       <button class="app-button" onclick="toggleGap()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" stroke-width=".75" viewBox="0 0 16 16" fill="none">
           <rect x="1.5" y="1.5" width="13" height="13" rx="1.5" stroke="black"/>
           <rect x="4.5" y="4.5" width="7" height="7" rx="0.5" stroke="black"/>
         </svg>
       </button>
       <button class="app-button" onclick="toggleBlur()">
-        <svg width="16" height="16" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="32" height="24" stroke-width=".75" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity=".05" d="M6.78296 13.376C8.73904 9.95284 8.73904 5.04719 6.78296 1.62405L7.21708 1.37598C9.261 4.95283 9.261 10.0472 7.21708 13.624L6.78296 13.376Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
           <path opacity=".1" d="M7.28204 13.4775C9.23929 9.99523 9.23929 5.00475 7.28204 1.52248L7.71791 1.2775C9.76067 4.9119 9.76067 10.0881 7.71791 13.7225L7.28204 13.4775Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
           <path opacity=".15" d="M7.82098 13.5064C9.72502 9.99523 9.72636 5.01411 7.82492 1.50084L8.26465 1.26285C10.2465 4.92466 10.2451 10.085 8.26052 13.7448L7.82098 13.5064Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
@@ -32,7 +32,7 @@
         </svg>
       </button>
       <button class="app-button" onclick="toggleGrayScale()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" stroke-width=".75" viewBox="0 0 16 16" fill="none">
           <circle cx="8" cy="8" r="6.5" stroke="black"/>
           <path d="M7.5 2H8.5V14H7.5L7.5 2Z" fill="black"/>
           <path d="M12.3033 2.98959L13.0104 3.6967L3.81803 12.8891L3.11093 12.182L12.3033 2.98959Z" fill="black"/>
@@ -41,7 +41,7 @@
         </svg>
       </button>
       <button class="app-button" onclick="toggleLightMode()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" stroke-width=".75" viewBox="0 0 16 16" fill="none">
           <path d="M10.5 8C10.5 9.38071 9.38071 10.5 8 10.5C6.61929 10.5 5.5 9.38071 5.5 8C5.5 6.61929 6.61929 5.5 8 5.5C9.38071 5.5 10.5 6.61929 10.5 8Z" stroke="#161616"/>
           <path d="M8 1.5V3.5" stroke="#161616" stroke-linecap="round"/>
           <path d="M8 12.5V14.5" stroke="#161616" stroke-linecap="round"/>
@@ -55,8 +55,7 @@
       </button>
     </div>
   </header>
-  <div class="d-f" style="height: 100%">
-    <div style="border-right: 1px solid var(--gray-o1); overflow-y: scroll; flex-shrink: 0; box-sizing: border-box; padding: 0 16px 16px 16px; height: calc(100% - 49px)">
+  <div class="" style="width: 1200px; margin-left: auto; margin-right: auto; padding-bottom: 120px;">
       <div class="Grid f-g" id="color-grid">
         <div class="Name"></div>
         <div class="Swatch">S1</div>
@@ -327,147 +326,6 @@
         <div class="Swatch" style="background-color: var(--green-p3);"></div>
         <div class="Swatch" style="background-color: var(--green-t1);"></div>
         <div class="Swatch" style="background-color: var(--green-t2);"></div>
-      </div>
-    </div>
-    
-    <div style="border-right: 1px solid var(--gray-o1); overflow-y: scroll; flex-shrink: 0; box-sizing: border-box; padding: 16px; height: calc(100% - 49px)">
-      <div class="d-f fd-c g-8">
-        <div class="d-f fw-w g-2">
-          <div class="Button variant-filled color-gray">Gray</div>
-          <div class="Button variant-filled color-mauve">Mauve</div>
-          <div class="Button variant-filled color-slate">Slate</div>
-          <div class="Button variant-filled color-sage">Sage</div>
-          <div class="Button variant-filled color-olive">Olive</div>
-          <div class="Button variant-filled color-sand">Sand</div>
-          <div class="Button variant-filled color-amber">Amber</div>
-          <div class="Button variant-filled color-orange">Orange</div>
-          <div class="Button variant-filled color-red">Red</div>
-          <div class="Button variant-filled color-pink">Pink</div>
-          <div class="Button variant-filled color-purple">Purple</div>
-          <div class="Button variant-filled color-violet">Violet</div>
-          <div class="Button variant-filled color-indigo">Indigo</div>
-          <div class="Button variant-filled color-blue">Blue</div>
-          <div class="Button variant-filled color-green">Green</div>
-        </div>
-    
-        <div class="d-f wr-w g-2">
-          <div class="Button variant-soft color-gray">Gray</div>
-          <div class="Button variant-soft color-orange">Orange</div>
-          <div class="Button variant-soft color-red">Red</div>
-          <div class="Button variant-soft color-pink">Pink</div>
-          <div class="Button variant-soft color-purple">Purple</div>
-          <div class="Button variant-soft color-violet">Violet</div>
-          <div class="Button variant-soft color-indigo">Indigo</div>
-          <div class="Button variant-soft color-blue">Blue</div>
-          <div class="Button variant-soft color-green">Green</div>
-        </div>
-
-        <div class="d-f wr-w g-2">
-          <div class="Button variant-text color-gray">Gray</div>
-          <div class="Button variant-text color-orange">Orange</div>
-          <div class="Button variant-text color-red">Red</div>
-          <div class="Button variant-text color-pink">Pink</div>
-          <div class="Button variant-text color-purple">Purple</div>
-          <div class="Button variant-text color-violet">Violet</div>
-          <div class="Button variant-text color-indigo">Indigo</div>
-          <div class="Button variant-text color-blue">Blue</div>
-          <div class="Button variant-text color-green">Green</div>
-        </div>
-
-        <div class="d-f wr-w g-2">
-          <div class="Button variant-classic color-gray">Gray</div>
-          <div class="Button variant-classic color-orange">Orange</div>
-          <div class="Button variant-classic color-red">Red</div>
-          <div class="Button variant-classic color-pink">Pink</div>
-          <div class="Button variant-classic color-purple">Purple</div>
-          <div class="Button variant-classic color-violet">Violet</div>
-          <div class="Button variant-classic color-indigo">Indigo</div>
-          <div class="Button variant-classic color-blue">Blue</div>
-          <div class="Button variant-classic color-green">Green</div>
-        </div>
-    
-        <div class="d-f wr-w g-2">
-          <div class="Button variant-outlined color-gray">Gray</div>
-          <div class="Button variant-outlined color-orange">Orange</div>
-          <div class="Button variant-outlined color-red">Red</div>
-          <div class="Button variant-outlined color-pink">Pink</div>
-          <div class="Button variant-outlined color-purple">Purple</div>
-          <div class="Button variant-outlined color-violet">Violet</div>
-          <div class="Button variant-outlined color-indigo">Indigo</div>
-          <div class="Button variant-outlined color-blue">Blue</div>
-          <div class="Button variant-outlined color-green">Green</div>
-        </div>
-
-        <div class="d-f fd-c g-2">
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--gray-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--gray-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--mauve-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--mauve-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--slate-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--slate-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sage-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sage-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--olive-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--olive-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sand-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--sand-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--amber-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--amber-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--orange-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--orange-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--red-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--red-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--pink-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--pink-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--plum-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--plum-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--purple-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--purple-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--violet-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--violet-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--indigo-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--indigo-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--blue-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--blue-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--teal-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--teal-s2);"></div>
-          </div>
-          <div class="d-f" style="margin-left: -25vw;">
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--green-s1);"></div>
-            <div style="width: 50vw; height: 500px; flex-shrink: 0; background-color: var(--green-s2);"></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

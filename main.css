@@ -1,5 +1,4 @@
 html {
-  overflow: hidden;
   height: 100%;
 }
 
@@ -23,7 +22,7 @@ body {
 .Grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(15, 48px);
+  grid-template-columns: repeat(15, 1fr);
 }
 
 .app-button {
@@ -80,3 +79,6 @@ body {
 .g-2 { gap: 8px }
 .g-8 { gap: 40px }
 .fd-c { flex-direction: column; }
+.jc-c {
+  justify-content: center;
+}
